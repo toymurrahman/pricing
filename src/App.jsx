@@ -1,18 +1,23 @@
-import { useState } from "react";
 
-import "./App.css";
-import DaisyNav from "./components/DaisyNav/DaisyNav";
-import Navbar from "./components/Navbar/Navbar";
+import LineChart from './components/LineChart/LineChart'
+import Navbar from './components/Navbar/Navbar'
+
+import Phones from './components/Phones/Phones'
+import PriceOptions from './components/PriceOptions/PriceOptions'
+// import DaisyNav from './components/DaisyNav/DaisyNav'
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-    <Navbar></Navbar>
+      <Navbar/>
       {/* <DaisyNav></DaisyNav> */}
+     
+      <PriceOptions></PriceOptions>
+      <LineChart></LineChart>
+      <Phones></Phones>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
